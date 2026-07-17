@@ -98,9 +98,14 @@ export function Footer() {
               </li>
               <li className="flex gap-3">
                 <HiPhone className="mt-0.5 h-5 w-5 shrink-0 text-primary" aria-hidden />
-                <a href={SITE.phoneHref} className="hover:text-primary">
-                  {SITE.phone}
-                </a>
+                <span className="flex flex-col gap-1">
+                  <a href={SITE.phoneHref} className="hover:text-primary">
+                    {SITE.phone}
+                  </a>
+                  <a href={SITE.phoneSecondaryHref} className="hover:text-primary">
+                    {SITE.phoneSecondary}
+                  </a>
+                </span>
               </li>
               <li className="flex gap-3">
                 <HiEnvelope className="mt-0.5 h-5 w-5 shrink-0 text-primary" aria-hidden />

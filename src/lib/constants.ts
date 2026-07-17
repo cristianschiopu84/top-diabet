@@ -10,6 +10,8 @@ export const SITE = {
   email: "contact@topdiabet.ro",
   phone: "+40 770 880 071",
   phoneHref: "tel:+40770880071",
+  phoneSecondary: "0770 720 596",
+  phoneSecondaryHref: "tel:+40770720596",
   address: {
     street: "Calea București 137E",
     city: "Craiova",
