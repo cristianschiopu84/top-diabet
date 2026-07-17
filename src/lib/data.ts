@@ -112,7 +112,7 @@ export const doctors = [
 export const advantages = [
   {
     title: "Programări rapide",
-    description: "Sloturi flexibile și confirmare rapidă, inclusiv online.",
+    description: "Sloturi flexibile și confirmare rapidă, telefonic sau prin email.",
     icon: "clock" as const,
   },
   {
