@@ -88,6 +88,12 @@ export default function TermsAndConditionsPage() {
 
       <h2>7. Contact</h2>
       <p>
+        {LEGAL_ENTITY.companyName}
+        <br />
+        CUI {LEGAL_ENTITY.cui} · Nr. Reg. Com. {LEGAL_ENTITY.regCom}
+        <br />
+        EUID {LEGAL_ENTITY.euid}
+        <br />
         {LEGAL_ENTITY.registeredOffice}
         <br />
         {LEGAL_ENTITY.phone} ·{" "}

@@ -1,15 +1,18 @@
 /**
- * Legal / company placeholders — complete before production go-live.
+ * Legal / company data for GDPR and legal pages.
  */
 export const LEGAL_ENTITY = {
-  companyName: "[Denumire societate / PFA]",
+  companyName: "TOP DIABET SRL",
   tradeName: "Top Diabet",
-  cui: "[CUI]",
-  regCom: "[Nr. Reg. Com.]",
+  cui: "36984691",
+  regCom: "J2017000129163",
+  euid: "ROONRC.J2017000129163",
   registeredOffice: "Calea București 137E, Craiova",
   email: "contact@topdiabet.ro",
   phone: "+40 770 880 071",
-  dpoEmail: "[email DPO / responsabil date]",
-  supervisoryAuthority: "Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)",
+  /** Contact for GDPR requests (no separate DPO designated). */
+  dpoEmail: "contact@topdiabet.ro",
+  supervisoryAuthority:
+    "Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)",
   supervisoryUrl: "https://www.dataprotection.ro",
 } as const;

@@ -2,7 +2,7 @@ export const SITE = {
   name: "Top Diabet",
   title: "Dr. Mihaela Vladu — Top Diabet",
   doctor: "Dr. Mihaela Vladu",
-  legalName: "Top Diabet",
+  legalName: "TOP DIABET SRL",
   tagline: "Grijă personalizată pentru controlul diabetului.",
   description:
     "Dr. Mihaela Vladu — Top Diabet. Consultații de diabet, nutriție și boli metabolice într-un mediu modern și profesionist. Calea București 137E, Craiova.",

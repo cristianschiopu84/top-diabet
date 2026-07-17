@@ -14,11 +14,11 @@ export default function PrivacyPolicyPage() {
   return (
     <LegalLayout title="Politică de Confidențialitate" updated="16 iulie 2026">
       <p>
-        Prezentul document explică modul în care {LEGAL_ENTITY.tradeName}{" "}
-        („noi”, „operatorul”) prelucrează datele cu caracter personal ale
-        vizitatorilor site-ului și ale pacienților care ne contactează online,
-        în conformitate cu Regulamentul (UE) 2016/679 (GDPR) și legislația
-        română aplicabilă.
+        Prezentul document explică modul în care {LEGAL_ENTITY.companyName}{" "}
+        ({LEGAL_ENTITY.tradeName}) („noi”, „operatorul”) prelucrează datele cu
+        caracter personal ale vizitatorilor site-ului și ale pacienților care ne
+        contactează online, în conformitate cu Regulamentul (UE) 2016/679
+        (GDPR) și legislația română aplicabilă.
       </p>
 
       <h2>1. Operatorul de date</h2>
@@ -39,6 +39,9 @@ export default function PrivacyPolicyPage() {
           {LEGAL_ENTITY.regCom}
         </li>
         <li>
+          <strong className="text-foreground">EUID:</strong> {LEGAL_ENTITY.euid}
+        </li>
+        <li>
           <strong className="text-foreground">Sediu:</strong>{" "}
           {LEGAL_ENTITY.registeredOffice}
         </li>
@@ -53,8 +56,10 @@ export default function PrivacyPolicyPage() {
           {LEGAL_ENTITY.phone}
         </li>
         <li>
-          <strong className="text-foreground">Contact date personale / DPO:</strong>{" "}
-          {LEGAL_ENTITY.dpoEmail}
+          <strong className="text-foreground">Contact date personale:</strong>{" "}
+          <a href={`mailto:${LEGAL_ENTITY.dpoEmail}`} className="font-medium text-primary">
+            {LEGAL_ENTITY.dpoEmail}
+          </a>
         </li>
       </ul>
 

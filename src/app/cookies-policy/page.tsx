@@ -14,9 +14,10 @@ export default function CookiesPolicyPage() {
   return (
     <LegalLayout title="Politica Cookies" updated="16 iulie 2026">
       <p>
-        Această politică explică modul în care {LEGAL_ENTITY.tradeName} folosește
-        cookie-uri și tehnologii similare pe {SITE.url}, în conformitate cu GDPR
-        și Directiva ePrivacy.
+        Această politică explică modul în care {LEGAL_ENTITY.companyName}{" "}
+        ({LEGAL_ENTITY.tradeName}, CUI {LEGAL_ENTITY.cui}) folosește cookie-uri
+        și tehnologii similare pe {SITE.url}, în conformitate cu GDPR și
+        Directiva ePrivacy.
       </p>
 
       <h2>1. Ce sunt cookie-urile?</h2>
@@ -97,6 +98,8 @@ export default function CookiesPolicyPage() {
 
       <h2>8. Contact</h2>
       <p>
+        Operator: {LEGAL_ENTITY.companyName} (CUI {LEGAL_ENTITY.cui})
+        <br />
         Întrebări:{" "}
         <a href={`mailto:${LEGAL_ENTITY.email}`} className="font-medium text-primary">
           {LEGAL_ENTITY.email}
