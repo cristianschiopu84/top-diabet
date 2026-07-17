@@ -46,7 +46,7 @@ export function ContactSection() {
                   href={SITE.phoneHref}
                   className="text-sm leading-relaxed text-muted transition hover:text-primary"
                 >
-                  0770 880 071
+                  {SITE.phone}
                 </a>
                 <a
                   href={SITE.phoneSecondaryHref}
