@@ -1,26 +1,13 @@
-function normalizeUrl(url: string) {
-  return url.endsWith("/") ? url.slice(0, -1) : url;
-}
-
-const appEnvironment =
-  process.env.NEXT_PUBLIC_APP_ENV === "preview" ? "preview" : "production";
-
-const siteUrl = normalizeUrl(
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://dianadragoi.ro"
-);
-
 export const SITE = {
-  name: "Diana Drăgoi",
-  title: "Dr. Diana Drăgoi",
-  doctor: "Dr. Diana Drăgoi",
-  legalName: "DIANA DRĂGOI SRL",
-  tagline: "Grijă personalizată pentru sănătatea ta.",
+  name: "Top Diabet",
+  title: "Dr. Mihaela Vladu — Top Diabet",
+  doctor: "Dr. Mihaela Vladu",
+  legalName: "TOP DIABET SRL",
+  tagline: "Grijă personalizată pentru controlul diabetului.",
   description:
-    "Dr. Diana Drăgoi. Consultații de specialitate într-un mediu modern și profesionist, în Craiova.",
-  url: siteUrl,
-  environment: appEnvironment,
-  isPreview: appEnvironment === "preview",
-  email: "contact@dianadragoi.ro",
+    "Dr. Mihaela Vladu — Top Diabet. Consultații de diabet, nutriție și boli metabolice într-un mediu modern și profesionist. Calea București 137E, Craiova.",
+  url: "https://topdiabet.ro",
+  email: "contact@topdiabet.ro",
   phone: "+40 770 880 071",
   phoneHref: "tel:+40770880071",
   phoneSecondary: "+40 770 720 596",
@@ -34,9 +21,9 @@ export const SITE = {
   },
   hours: "Luni – Vineri: 08:00 – 20:00 · Sâmbătă: 09:00 – 14:00",
   social: {
-    facebook: "https://facebook.com/dianadragoi",
-    instagram: "https://instagram.com/dianadragoi",
-    linkedin: "https://linkedin.com/in/dianadragoi",
+    facebook: "https://facebook.com/topdiabet",
+    instagram: "https://instagram.com/topdiabet",
+    linkedin: "https://linkedin.com/company/topdiabet",
   },
   mapsEmbed:
     "https://www.google.com/maps?q=Calea+Bucure%C8%99ti+137E,+Craiova&output=embed",

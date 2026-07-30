@@ -7,15 +7,8 @@ import { doctors } from "@/lib/data";
 
 export function Doctors() {
   return (
-    <section
-      id="medici"
-      className="relative overflow-hidden bg-gradient-to-b from-white via-light-gray/45 to-white py-20 sm:py-24"
-    >
-      <div
-        className="pointer-events-none absolute -left-16 bottom-10 h-60 w-60 rounded-full bg-secondary/15 blur-3xl"
-        aria-hidden
-      />
-      <Container className="relative">
+    <section id="medici" className="bg-white py-20 sm:py-24">
+      <Container>
         <FadeIn>
           <SectionHeading
             eyebrow="Medici"
@@ -27,8 +20,8 @@ export function Doctors() {
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {doctors.map((doctor, index) => (
             <FadeIn key={doctor.slug} delay={index * 0.06}>
-              <article className="group flex h-full flex-col items-center rounded-3xl border border-primary/15 bg-white/80 p-8 text-center shadow-lg shadow-primary/8 ring-1 ring-white/70 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-primary/15">
-                <div className="relative h-28 w-28 overflow-hidden rounded-full ring-4 ring-primary/20 transition duration-300 group-hover:ring-secondary/35">
+              <article className="group flex h-full flex-col items-center rounded-3xl border border-border bg-white p-8 text-center shadow-sm shadow-slate-900/[0.03] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10">
+                <div className="relative h-28 w-28 overflow-hidden rounded-full ring-4 ring-primary/10 transition duration-300 group-hover:ring-primary/25">
                   <Image
                     src={doctor.image}
                     alt={`Avatar ilustrat ${doctor.name}`}

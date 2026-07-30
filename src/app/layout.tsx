@@ -17,18 +17,18 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Dr. Diana Drăgoi | Consultații de specialitate",
-    template: "%s | Dr. Diana Drăgoi",
+    default: "Dr. Mihaela Vladu — Top Diabet | Clinică de diabet",
+    template: "%s | Dr. Mihaela Vladu — Top Diabet",
   },
   description: SITE.description,
   keywords: [
     "diabet",
     "clinică diabet",
-    "Dr. Diana Drăgoi",
+    "Dr. Mihaela Vladu",
     "diabetolog Craiova",
     "nutriție diabet",
     "monitorizare glicemie",
-    "Diana Drăgoi",
+    "Top Diabet",
   ],
   authors: [{ name: SITE.doctor }],
   creator: SITE.title,
@@ -37,38 +37,27 @@ export const metadata: Metadata = {
     locale: "ro_RO",
     url: SITE.url,
     siteName: SITE.title,
-    title: "Dr. Diana Drăgoi | Îngrijire personalizată",
+    title: "Dr. Mihaela Vladu — Top Diabet | Controlul diabetului",
     description: SITE.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Diana Drăgoi",
+    title: "Dr. Mihaela Vladu — Top Diabet",
     description: SITE.description,
   },
   alternates: {
     canonical: SITE.url,
   },
-  robots: SITE.isPreview
-    ? {
-        index: false,
-        follow: false,
-        googleBot: {
-          index: false,
-          follow: false,
-          "max-image-preview": "none",
-          "max-snippet": 0,
-        },
-      }
-    : {
-        index: true,
-        follow: true,
-        googleBot: {
-          index: true,
-          follow: true,
-          "max-image-preview": "large",
-          "max-snippet": -1,
-        },
-      },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export const viewport: Viewport = {

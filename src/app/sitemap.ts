@@ -3,10 +3,6 @@ import { SITE } from "@/lib/constants";
 import { blogPosts, doctors } from "@/lib/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  if (SITE.isPreview) {
-    return [];
-  }
-
   const staticRoutes = [
     "",
     "/privacy-policy",

@@ -25,16 +25,12 @@ const icons: Record<(typeof advantages)[number]["icon"], IconType> = {
 
 export function Advantages() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-light-gray/65 via-white to-light-gray/50 py-20 sm:py-24">
-      <div
-        className="pointer-events-none absolute right-12 top-14 h-56 w-56 rounded-full bg-primary/15 blur-3xl"
-        aria-hidden
-      />
-      <Container className="relative">
+    <section className="bg-light-gray py-20 sm:py-24">
+      <Container>
         <FadeIn>
           <SectionHeading
             eyebrow="Avantaje"
-            title="De ce pacienții aleg clinica Dr. Diana Drăgoi"
+            title="De ce pacienții aleg Top Diabet"
             description="Standarde înalte de îngrijire, tehnologie modernă și o relație medicală bazată pe încredere."
           />
         </FadeIn>
@@ -44,8 +40,8 @@ export function Advantages() {
             const Icon = icons[item.icon];
             return (
               <FadeIn key={item.title} delay={index * 0.04}>
-                <div className="flex h-full gap-4 rounded-3xl border border-primary/15 bg-white/80 p-6 shadow-lg shadow-primary/8 ring-1 ring-white/70 backdrop-blur-sm transition duration-300 hover:scale-[1.015] hover:shadow-xl hover:shadow-secondary/10">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-secondary/20 to-primary/20 text-secondary">
+                <div className="flex h-full gap-4 rounded-3xl border border-border bg-white p-6 shadow-sm shadow-slate-900/[0.03] transition duration-300 hover:scale-[1.015] hover:shadow-md">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-secondary/15 text-secondary">
                     <Icon className="h-5 w-5" aria-hidden />
                   </div>
                   <div>

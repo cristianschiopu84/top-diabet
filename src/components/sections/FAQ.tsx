@@ -6,15 +6,8 @@ import { faqs } from "@/lib/data";
 
 export function FAQ() {
   return (
-    <section
-      id="intrebari"
-      className="relative overflow-hidden bg-gradient-to-b from-white via-light-gray/45 to-white py-20 sm:py-24"
-    >
-      <div
-        className="pointer-events-none absolute -left-20 top-10 h-60 w-60 rounded-full bg-primary/15 blur-3xl"
-        aria-hidden
-      />
-      <Container className="relative">
+    <section id="intrebari" className="bg-white py-20 sm:py-24">
+      <Container>
         <FadeIn>
           <SectionHeading
             eyebrow="Întrebări frecvente"

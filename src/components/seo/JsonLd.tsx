@@ -2,10 +2,6 @@ import { SITE } from "@/lib/constants";
 import { LEGAL_ENTITY } from "@/lib/legal";
 
 export function JsonLd() {
-  if (SITE.isPreview) {
-    return null;
-  }
-
   const data = {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
