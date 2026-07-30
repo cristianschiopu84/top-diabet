@@ -28,8 +28,8 @@ export function Navbar() {
     <header
       className={`sticky top-0 z-50 border-b transition-all duration-300 ${
         scrolled
-          ? "border-border/80 bg-white/80 shadow-sm shadow-slate-900/[0.04] backdrop-blur-xl"
-          : "border-transparent bg-white/70 backdrop-blur-md"
+          ? "border-primary/20 bg-white/72 shadow-lg shadow-primary/10 backdrop-blur-2xl"
+          : "border-transparent bg-white/58 backdrop-blur-xl"
       }`}
     >
       <nav
@@ -41,7 +41,7 @@ export function Navbar() {
           className="group flex items-center gap-2.5"
           aria-label={`${SITE.name} — Acasă`}
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-sm font-bold text-white shadow-sm shadow-primary/25 transition-transform duration-300 group-hover:scale-105">
+          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-secondary text-sm font-bold text-white shadow-md shadow-primary/30 transition-transform duration-300 group-hover:scale-105">
             TD
           </span>
           <span className="flex flex-col leading-tight">
@@ -59,7 +59,7 @@ export function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="rounded-xl px-3 py-2 text-sm font-medium text-muted transition-colors hover:bg-light-gray hover:text-foreground"
+                className="rounded-xl px-3 py-2 text-sm font-medium text-muted transition-all hover:bg-white/80 hover:text-foreground hover:shadow-sm hover:shadow-primary/15"
               >
                 {link.label}
               </a>
@@ -75,7 +75,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-xl text-foreground hover:bg-light-gray lg:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-xl text-foreground ring-1 ring-transparent transition hover:bg-white/80 hover:ring-primary/25 lg:hidden"
           aria-label={open ? "Închide meniul" : "Deschide meniul"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
@@ -85,13 +85,13 @@ export function Navbar() {
       </nav>
 
       {open ? (
-        <div className="border-t border-border bg-white lg:hidden">
+        <div className="border-t border-primary/15 bg-white/95 backdrop-blur-xl lg:hidden">
           <ul className="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4 sm:px-6">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="block rounded-xl px-3 py-3 text-base font-medium text-foreground hover:bg-light-gray"
+                  className="block rounded-xl px-3 py-3 text-base font-medium text-foreground transition hover:bg-light-gray/80"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

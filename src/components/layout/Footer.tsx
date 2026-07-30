@@ -17,7 +17,7 @@ const legalLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-light-gray">
+    <footer className="border-t border-primary/20 bg-light-gray/80 backdrop-blur-sm">
       <Container className="py-16 sm:py-20">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
@@ -44,7 +44,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook Top Diabet"
-                className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-primary shadow-sm ring-1 ring-border transition hover:scale-105 hover:bg-primary hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/80 text-primary shadow-sm ring-1 ring-primary/20 transition hover:scale-105 hover:bg-primary hover:text-white"
               >
                 <FaFacebookF className="h-4 w-4" />
               </a>
@@ -53,7 +53,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram Top Diabet"
-                className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-primary shadow-sm ring-1 ring-border transition hover:scale-105 hover:bg-primary hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/80 text-primary shadow-sm ring-1 ring-primary/20 transition hover:scale-105 hover:bg-primary hover:text-white"
               >
                 <FaInstagram className="h-4 w-4" />
               </a>
@@ -62,7 +62,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Top Diabet"
-                className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-primary shadow-sm ring-1 ring-border transition hover:scale-105 hover:bg-primary hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/80 text-primary shadow-sm ring-1 ring-primary/20 transition hover:scale-105 hover:bg-primary hover:text-white"
               >
                 <FaLinkedinIn className="h-4 w-4" />
               </a>
@@ -119,7 +119,7 @@ export function Footer() {
               </li>
             </ul>
 
-            <div className="mt-6 overflow-hidden rounded-2xl border border-border bg-white shadow-sm">
+            <div className="mt-6 overflow-hidden rounded-2xl border border-primary/20 bg-white/85 shadow-sm backdrop-blur-sm">
               <iframe
                 title="Hartă Google — locația clinicii Top Diabet"
                 src={SITE.mapsEmbed}

@@ -1,3 +1,14 @@
+function normalizeUrl(url: string) {
+  return url.endsWith("/") ? url.slice(0, -1) : url;
+}
+
+const appEnvironment =
+  process.env.NEXT_PUBLIC_APP_ENV === "preview" ? "preview" : "production";
+
+const siteUrl = normalizeUrl(
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://topdiabet.ro"
+);
+
 export const SITE = {
   name: "Top Diabet",
   title: "Dr. Mihaela Vladu — Top Diabet",
@@ -6,7 +17,9 @@ export const SITE = {
   tagline: "Grijă personalizată pentru controlul diabetului.",
   description:
     "Dr. Mihaela Vladu — Top Diabet. Consultații de diabet, nutriție și boli metabolice într-un mediu modern și profesionist. Calea București 137E, Craiova.",
-  url: "https://topdiabet.ro",
+  url: siteUrl,
+  environment: appEnvironment,
+  isPreview: appEnvironment === "preview",
   email: "contact@topdiabet.ro",
   phone: "+40 770 880 071",
   phoneHref: "tel:+40770880071",

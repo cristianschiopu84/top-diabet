@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
-  --primary: #0e7490;
-  --secondary: #14b8a6;
-  --accent: #22c55e;
-  --light-gray: #f8fafc;
-  --muted: #64748b;
-  --border: #e2e8f0;
+  --background: #f4f7ff;
+  --foreground: #0b1120;
+  --primary: #2563eb;
+  --secondary: #7c3aed;
+  --accent: #06b6d4;
+  --light-gray: #edf2ff;
+  --muted: #495a78;
+  --border: #c8d6f3;
 }
 
 @theme inline {
@@ -28,17 +28,34 @@ html {
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at 12% -8%, color-mix(in srgb, var(--secondary) 14%, white), transparent 36%),
+    radial-gradient(circle at 88% -10%, color-mix(in srgb, var(--primary) 18%, white), transparent 34%),
+    radial-gradient(circle at 50% 110%, color-mix(in srgb, var(--accent) 14%, white), transparent 40%),
+    var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--primary) 10%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--secondary) 8%, transparent) 1px, transparent 1px);
+  background-size: 46px 46px;
+  opacity: 0.32;
+  z-index: -1;
+}
+
 ::selection {
-  background: color-mix(in srgb, var(--primary) 22%, white);
+  background: color-mix(in srgb, var(--primary) 24%, white);
   color: var(--foreground);
 }
 
 :focus-visible {
-  outline: 2px solid var(--primary);
+  outline: 2px solid color-mix(in srgb, var(--secondary) 65%, var(--primary));
   outline-offset: 3px;
 }

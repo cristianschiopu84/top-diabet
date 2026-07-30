@@ -13,13 +13,13 @@ type ButtonProps = {
 
 const variants = {
   primary:
-    "bg-primary text-white shadow-sm shadow-primary/20 hover:bg-[#0c667e] hover:shadow-md hover:shadow-primary/25",
+    "bg-gradient-to-r from-primary via-[#3b82f6] to-secondary text-white shadow-lg shadow-primary/30 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-secondary/25",
   secondary:
-    "bg-white text-primary ring-1 ring-primary/20 hover:bg-light-gray hover:ring-primary/35",
+    "bg-white/80 text-foreground ring-1 ring-primary/25 backdrop-blur-sm hover:bg-white hover:ring-secondary/40",
   white:
-    "bg-white text-primary shadow-sm hover:bg-light-gray",
+    "bg-white text-primary shadow-lg shadow-primary/20 hover:-translate-y-0.5 hover:bg-white",
   ghost:
-    "bg-transparent text-foreground ring-1 ring-border hover:bg-light-gray",
+    "bg-transparent text-foreground ring-1 ring-border hover:bg-primary/5 hover:ring-primary/35",
 };
 
 export function Button({
@@ -31,7 +31,7 @@ export function Button({
   type = "button",
   ariaLabel,
 }: ButtonProps) {
-  const classes = `inline-flex items-center justify-center rounded-2xl px-6 py-3.5 text-sm font-semibold tracking-tight transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${variants[variant]} ${className}`;
+  const classes = `inline-flex items-center justify-center rounded-2xl px-6 py-3.5 text-sm font-semibold tracking-tight transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 ${variants[variant]} ${className}`;
 
   if (href) {
     return (

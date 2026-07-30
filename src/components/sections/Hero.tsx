@@ -13,18 +13,18 @@ export function Hero() {
   return (
     <section
       id="acasa"
-      className="relative overflow-hidden bg-gradient-to-b from-light-gray via-white to-white"
+      className="relative overflow-hidden bg-gradient-to-b from-light-gray via-white to-light-gray/60"
     >
       <div
-        className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-secondary/10 blur-3xl"
+        className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-secondary/20 blur-3xl"
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute -right-16 bottom-0 h-80 w-80 rounded-full bg-primary/10 blur-3xl"
+        className="pointer-events-none absolute -right-16 bottom-0 h-80 w-80 rounded-full bg-primary/20 blur-3xl"
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute left-1/2 top-24 h-40 w-40 -translate-x-1/2 rounded-full bg-accent/10 blur-3xl"
+        className="pointer-events-none absolute left-1/2 top-24 h-40 w-40 -translate-x-1/2 rounded-full bg-accent/20 blur-3xl"
         aria-hidden
       />
 
@@ -36,7 +36,7 @@ export function Hero() {
         >
           <motion.p
             variants={fadeUp}
-            className="mb-4 text-sm font-semibold uppercase tracking-[0.14em] text-secondary"
+            className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-secondary"
           >
             Dr. Mihaela Vladu · Top Diabet · Craiova
           </motion.p>
@@ -44,7 +44,11 @@ export function Hero() {
             variants={fadeUp}
             className="max-w-xl text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-[3.25rem] lg:leading-[1.1]"
           >
-            Grijă personalizată pentru controlul diabetului.
+            Grijă personalizată pentru{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+              controlul diabetului
+            </span>
+            .
           </motion.h1>
           <motion.p
             variants={fadeUp}
@@ -67,8 +71,11 @@ export function Hero() {
           variants={fadeLeft}
           className="relative"
         >
-          <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-primary/15 via-secondary/10 to-accent/10 blur-xl" aria-hidden />
-          <div className="relative overflow-hidden rounded-[1.75rem] bg-white shadow-xl shadow-slate-900/10 ring-1 ring-border">
+          <div
+            className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-primary/25 via-secondary/20 to-accent/20 blur-xl"
+            aria-hidden
+          />
+          <div className="relative overflow-hidden rounded-[1.75rem] bg-white/85 shadow-2xl shadow-primary/15 ring-1 ring-primary/20 backdrop-blur-sm">
             <Image
               src="/images/hero-mihaela.jpg"
               alt="Dr. Mihaela Vladu în consultație la clinica Top Diabet"
