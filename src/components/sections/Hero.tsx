@@ -38,7 +38,7 @@ export function Hero() {
             variants={fadeUp}
             className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-secondary"
           >
-            Dr. Mihaela Vladu · Top Diabet · Craiova
+            Dr. Diana Drăgoi · Craiova
           </motion.p>
           <motion.h1
             variants={fadeUp}
@@ -78,7 +78,7 @@ export function Hero() {
           <div className="relative overflow-hidden rounded-[1.75rem] bg-white/85 shadow-2xl shadow-primary/15 ring-1 ring-primary/20 backdrop-blur-sm">
             <Image
               src="/images/hero-mihaela.jpg"
-              alt="Dr. Mihaela Vladu în consultație la clinica Top Diabet"
+              alt="Dr. Diana Drăgoi în cabinet"
               width={1457}
               height={1079}
               priority

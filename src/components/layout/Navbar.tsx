@@ -46,10 +46,10 @@ export function Navbar() {
           </span>
           <span className="flex flex-col leading-tight">
             <span className="text-[11px] font-medium uppercase tracking-[0.08em] text-muted sm:text-xs">
-              Dr. Mihaela Vladu
+                Dr. Diana Drăgoi
             </span>
             <span className="text-base font-semibold tracking-tight text-foreground sm:text-lg">
-              Top <span className="text-primary">Diabet</span>
+                Diana <span className="text-primary">Drăgoi</span>
             </span>
           </span>
         </Link>

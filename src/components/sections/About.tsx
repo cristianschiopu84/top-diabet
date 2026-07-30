@@ -13,7 +13,7 @@ export function About() {
             <div className="relative overflow-hidden rounded-[1.75rem] bg-white shadow-lg shadow-slate-900/8 ring-1 ring-border">
               <Image
                 src="/images/despre-birou.jpg"
-                alt="Interior modern al clinicii Top Diabet"
+                alt="Interior modern al clinicii Dr. Diana Drăgoi"
                 width={1402}
                 height={1122}
                 className="h-[360px] w-full object-cover sm:h-[460px]"
@@ -30,8 +30,8 @@ export function About() {
               O clinică modernă, centrată pe pacient
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
-              La Top Diabet, sub îndrumarea Dr. Mihaela Vladu, combinăm expertiza
-              medicală, tehnologia de monitorizare și educația diabetologică pentru
+              În clinica Dr. Diana Drăgoi, combinăm expertiza medicală, tehnologia
+              de monitorizare și educația diabetologică pentru
               a oferi un parcurs clar, calm și eficient. Fiecare consultație este
               personalizată — de la diagnostic până la urmărirea pe termen lung.
             </p>

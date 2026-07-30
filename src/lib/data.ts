@@ -44,11 +44,11 @@ export const stats = [
 
 export const doctors = [
   {
-    slug: "dr-mihaela-vladu",
-    name: "Dr. Mihaela Vladu",
+    slug: "dr-diana-dragoi",
+    name: "Dr. Diana Drăgoi",
     specialty: "Medic primar diabet și boli de nutriție",
-    experience: "Fondatoare Top Diabet",
-    bio: "Medic primar diabet și boli de nutriție, fondatoarea clinicii Top Diabet. Abordare personalizată pentru diabet tip 1, tip 2, nutriție și boli metabolice.",
+    experience: "Fondatoare",
+    bio: "Medic primar diabet și boli de nutriție, cu abordare personalizată pentru diabet tip 1, tip 2, nutriție și boli metabolice.",
     image: "/images/medici/dr-mihaela-vladu.png",
   },
   {
@@ -168,7 +168,7 @@ export const testimonials = [
     name: "Radu M.",
     role: "Pacient · Obezitate",
     quote:
-      "Clinică modernă, medici empatici și rezultate măsurabile. Recomand cu încredere Top Diabet.",
+      "Clinică modernă, medici empatici și rezultate măsurabile. Recomand cu încredere.",
     rating: 5,
   },
   {

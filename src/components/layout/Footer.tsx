@@ -27,23 +27,23 @@ export function Footer() {
               </span>
               <span className="flex flex-col leading-tight">
                 <span className="text-[11px] font-medium uppercase tracking-[0.08em] text-muted">
-                  Dr. Mihaela Vladu
+                  Dr. Diana Drăgoi
                 </span>
                 <span className="text-base font-semibold tracking-tight sm:text-lg">
-                  Top <span className="text-primary">Diabet</span>
+                  Diana <span className="text-primary">Drăgoi</span>
                 </span>
               </span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
-              Dr. Mihaela Vladu — Top Diabet. Clinică de diabet, nutriție și boli
-              metabolice. Îngrijire modernă, empatică și bazată pe dovezi.
+              Dr. Diana Drăgoi. Consultații de specialitate într-un mediu modern,
+              empatic și orientat spre rezultate pe termen lung.
             </p>
             <div className="mt-6 flex gap-3">
               <a
                 href={SITE.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Facebook Top Diabet"
+                aria-label="Facebook Diana Drăgoi"
                 className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/80 text-primary shadow-sm ring-1 ring-primary/20 transition hover:scale-105 hover:bg-primary hover:text-white"
               >
                 <FaFacebookF className="h-4 w-4" />
@@ -52,7 +52,7 @@ export function Footer() {
                 href={SITE.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram Top Diabet"
+                aria-label="Instagram Diana Drăgoi"
                 className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/80 text-primary shadow-sm ring-1 ring-primary/20 transition hover:scale-105 hover:bg-primary hover:text-white"
               >
                 <FaInstagram className="h-4 w-4" />
@@ -61,7 +61,7 @@ export function Footer() {
                 href={SITE.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="LinkedIn Top Diabet"
+                aria-label="LinkedIn Diana Drăgoi"
                 className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/80 text-primary shadow-sm ring-1 ring-primary/20 transition hover:scale-105 hover:bg-primary hover:text-white"
               >
                 <FaLinkedinIn className="h-4 w-4" />
@@ -121,7 +121,7 @@ export function Footer() {
 
             <div className="mt-6 overflow-hidden rounded-2xl border border-primary/20 bg-white/85 shadow-sm backdrop-blur-sm">
               <iframe
-                title="Hartă Google — locația clinicii Top Diabet"
+                title="Hartă Google — locația clinicii Dr. Diana Drăgoi"
                 src={SITE.mapsEmbed}
                 className="h-48 w-full border-0"
                 loading="lazy"

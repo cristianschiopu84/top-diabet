@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Dr. Mihaela Vladu — Top Diabet";
+export const alt = "Dr. Diana Drăgoi";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -21,13 +21,13 @@ export default function OpenGraphImage() {
         }}
       >
         <div style={{ fontSize: 28, opacity: 0.9, letterSpacing: 4, textTransform: "uppercase" }}>
-          Dr. Mihaela Vladu
+          Dr. Diana Drăgoi
         </div>
         <div style={{ fontSize: 72, fontWeight: 700, marginTop: 16, lineHeight: 1.1 }}>
-          Top Diabet
+          Diana Drăgoi
         </div>
         <div style={{ fontSize: 32, marginTop: 24, maxWidth: 800, opacity: 0.95 }}>
-          Grijă personalizată pentru controlul diabetului.
+          Grijă personalizată pentru sănătatea ta.
         </div>
       </div>
     ),

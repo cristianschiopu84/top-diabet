@@ -1,6 +1,6 @@
-# Top Diabet
+# Diana Drăgoi
 
-Website premium pentru clinica de diabet **Top Diabet** (România).
+Website premium pentru clinica **Dr. Diana Drăgoi** (România).
 
 ## Stack
 

@@ -30,7 +30,7 @@ export function Advantages() {
         <FadeIn>
           <SectionHeading
             eyebrow="Avantaje"
-            title="De ce pacienții aleg Top Diabet"
+            title="De ce pacienții aleg clinica Dr. Diana Drăgoi"
             description="Standarde înalte de îngrijire, tehnologie modernă și o relație medicală bazată pe încredere."
           />
         </FadeIn>

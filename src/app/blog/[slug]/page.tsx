@@ -56,7 +56,8 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
         <div className="mt-8 space-y-4 text-base leading-relaxed text-muted">
           <p>
-            La Top Diabet, educația medicală este parte esențială din îngrijire.
+            La clinica Dr. Diana Drăgoi, educația medicală este parte esențială din
+            îngrijire.
             Articolul de față rezumă principii practice pe care le discutăm frecvent
             în consultații — adaptate nevoilor fiecărui pacient.
           </p>
