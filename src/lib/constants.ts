@@ -6,7 +6,7 @@ const appEnvironment =
   process.env.NEXT_PUBLIC_APP_ENV === "preview" ? "preview" : "production";
 
 const siteUrl = normalizeUrl(
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://topdiabet.ro"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://dianadragoi.ro"
 );
 
 export const SITE = {
