@@ -8,13 +8,17 @@ export function CTA() {
     <section className="py-16 sm:py-20">
       <Container>
         <FadeIn>
-          <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-primary via-[#0f8aa3] to-secondary px-8 py-14 text-center shadow-xl shadow-primary/20 sm:px-12 sm:py-16">
+          <div className="relative overflow-hidden rounded-[2rem] border border-primary/25 bg-gradient-to-br from-[#1d4ed8] via-primary to-secondary px-8 py-14 text-center shadow-2xl shadow-primary/30 ring-1 ring-white/20 sm:px-12 sm:py-16">
             <div
-              className="pointer-events-none absolute -left-10 top-0 h-40 w-40 rounded-full bg-white/10 blur-2xl"
+              className="pointer-events-none absolute -left-10 top-0 h-40 w-40 rounded-full bg-white/20 blur-2xl"
               aria-hidden
             />
             <div
-              className="pointer-events-none absolute -right-8 bottom-0 h-48 w-48 rounded-full bg-accent/20 blur-2xl"
+              className="pointer-events-none absolute -right-8 bottom-0 h-48 w-48 rounded-full bg-accent/30 blur-2xl"
+              aria-hidden
+            />
+            <div
+              className="pointer-events-none absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/70 to-transparent"
               aria-hidden
             />
             <h2 className="relative text-3xl font-semibold tracking-tight text-white sm:text-4xl">

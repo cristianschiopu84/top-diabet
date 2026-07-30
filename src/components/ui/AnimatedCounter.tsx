@@ -37,7 +37,7 @@ export function AnimatedCounter({ value, suffix = "", label }: AnimatedCounterPr
   }, [inView, reduceMotion, value]);
 
   return (
-    <div ref={ref} className="text-center sm:text-left">
+    <div ref={ref} className="rounded-2xl border border-primary/15 bg-white/70 px-4 py-4 text-center shadow-sm shadow-primary/5 ring-1 ring-white/70 backdrop-blur-sm sm:text-left">
       <p className="text-3xl font-semibold tracking-tight text-primary sm:text-4xl">
         {display}
         {suffix}

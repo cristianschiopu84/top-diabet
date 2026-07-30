@@ -27,8 +27,15 @@ export function Testimonials() {
     setIndex((i) => (i === testimonials.length - 1 ? 0 : i + 1));
 
   return (
-    <section className="bg-white py-20 sm:py-24" aria-roledescription="carousel">
-      <Container>
+    <section
+      className="relative overflow-hidden bg-gradient-to-b from-white via-light-gray/50 to-white py-20 sm:py-24"
+      aria-roledescription="carousel"
+    >
+      <div
+        className="pointer-events-none absolute left-8 top-12 h-52 w-52 rounded-full bg-accent/15 blur-3xl"
+        aria-hidden
+      />
+      <Container className="relative">
         <FadeIn>
           <SectionHeading
             eyebrow="Testimoniale"
@@ -38,7 +45,7 @@ export function Testimonials() {
         </FadeIn>
 
         <FadeIn className="mt-14">
-          <div className="relative mx-auto max-w-3xl rounded-[1.75rem] border border-border bg-light-gray p-8 shadow-sm sm:p-12">
+          <div className="relative mx-auto max-w-3xl rounded-[1.75rem] border border-primary/20 bg-white/80 p-8 shadow-xl shadow-primary/10 ring-1 ring-white/70 backdrop-blur-sm sm:p-12">
             <AnimatePresence mode="wait">
               <motion.blockquote
                 key={item.name}
@@ -49,7 +56,7 @@ export function Testimonials() {
                 className="text-center"
               >
                 <div
-                  className="mb-5 flex justify-center gap-1 text-accent"
+                  className="mb-5 flex justify-center gap-1 text-secondary"
                   aria-label={`${item.rating} din 5 stele`}
                 >
                   {Array.from({ length: item.rating }).map((_, i) => (
@@ -61,7 +68,7 @@ export function Testimonials() {
                 </p>
                 <footer className="mt-8 flex flex-col items-center gap-3">
                   <div
-                    className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-primary to-secondary text-base font-semibold text-white ring-2 ring-white"
+                    className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-primary to-secondary text-base font-semibold text-white ring-2 ring-primary/20"
                     aria-hidden
                   >
                     {initials(item.name)}
@@ -81,7 +88,7 @@ export function Testimonials() {
                 type="button"
                 onClick={prev}
                 aria-label="Testimonialul anterior"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-foreground transition hover:scale-105 hover:border-primary/30 hover:text-primary"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-primary/20 bg-white/80 text-foreground transition hover:scale-105 hover:border-secondary/40 hover:text-secondary"
               >
                 <HiChevronLeft className="h-5 w-5" />
               </button>
@@ -95,7 +102,9 @@ export function Testimonials() {
                     aria-label={`Testimonial ${i + 1}`}
                     onClick={() => setIndex(i)}
                     className={`h-2.5 rounded-full transition-all ${
-                      i === index ? "w-7 bg-primary" : "w-2.5 bg-border hover:bg-primary/40"
+                      i === index
+                        ? "w-7 bg-gradient-to-r from-primary to-secondary"
+                        : "w-2.5 bg-border hover:bg-secondary/40"
                     }`}
                   />
                 ))}
@@ -104,7 +113,7 @@ export function Testimonials() {
                 type="button"
                 onClick={next}
                 aria-label="Testimonialul următor"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-foreground transition hover:scale-105 hover:border-primary/30 hover:text-primary"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-primary/20 bg-white/80 text-foreground transition hover:scale-105 hover:border-secondary/40 hover:text-secondary"
               >
                 <HiChevronRight className="h-5 w-5" />
               </button>

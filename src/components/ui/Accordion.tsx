@@ -26,14 +26,14 @@ export function Accordion({ items }: AccordionProps) {
         return (
           <div
             key={item.question}
-            className="overflow-hidden rounded-2xl border border-border bg-white shadow-sm shadow-slate-900/[0.03]"
+            className="overflow-hidden rounded-2xl border border-primary/15 bg-white/80 shadow-lg shadow-primary/8 ring-1 ring-white/70 backdrop-blur-sm"
           >
             <button
               id={buttonId}
               type="button"
               aria-expanded={open}
               aria-controls={panelId}
-              className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left sm:px-6 sm:py-5"
+              className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left transition hover:bg-primary/5 sm:px-6 sm:py-5"
               onClick={() => setOpenIndex(open ? null : index)}
             >
               <span className="text-base font-semibold text-foreground sm:text-lg">
@@ -57,7 +57,7 @@ export function Accordion({ items }: AccordionProps) {
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <p className="border-t border-border px-5 pb-5 pt-4 text-sm leading-relaxed text-muted sm:px-6 sm:text-base">
+                  <p className="border-t border-primary/15 px-5 pb-5 pt-4 text-sm leading-relaxed text-muted sm:px-6 sm:text-base">
                     {item.answer}
                   </p>
                 </motion.div>

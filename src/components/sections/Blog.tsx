@@ -7,8 +7,15 @@ import { blogPosts } from "@/lib/data";
 
 export function Blog() {
   return (
-    <section id="blog" className="bg-light-gray py-20 sm:py-24">
-      <Container>
+    <section
+      id="blog"
+      className="relative overflow-hidden bg-gradient-to-b from-light-gray/60 via-white to-light-gray/65 py-20 sm:py-24"
+    >
+      <div
+        className="pointer-events-none absolute -right-16 top-8 h-56 w-56 rounded-full bg-secondary/15 blur-3xl"
+        aria-hidden
+      />
+      <Container className="relative">
         <FadeIn>
           <SectionHeading
             eyebrow="Blog"
@@ -20,7 +27,7 @@ export function Blog() {
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((post, index) => (
             <FadeIn key={post.slug} delay={index * 0.05}>
-              <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-white shadow-sm shadow-slate-900/[0.03] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10">
+              <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-primary/15 bg-white/80 shadow-lg shadow-primary/8 ring-1 ring-white/70 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-primary/15">
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={post.image}

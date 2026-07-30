@@ -6,8 +6,15 @@ import { SITE } from "@/lib/constants";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="bg-white py-20 sm:py-24">
-      <Container>
+    <section
+      id="contact"
+      className="relative overflow-hidden bg-gradient-to-b from-white via-light-gray/55 to-white py-20 sm:py-24"
+    >
+      <div
+        className="pointer-events-none absolute right-8 top-8 h-64 w-64 rounded-full bg-secondary/15 blur-3xl"
+        aria-hidden
+      />
+      <Container className="relative">
         <FadeIn>
           <SectionHeading
             eyebrow="Contact"
@@ -17,8 +24,8 @@ export function ContactSection() {
         </FadeIn>
         <FadeIn className="mx-auto mt-12 max-w-4xl">
           <div className="grid gap-6 sm:grid-cols-3">
-            <div className="flex flex-col items-center rounded-2xl border border-border bg-light-gray p-8 text-center shadow-sm">
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+            <div className="flex flex-col items-center rounded-2xl border border-primary/15 bg-white/80 p-8 text-center shadow-lg shadow-primary/8 ring-1 ring-white/70 backdrop-blur-sm">
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/15 to-secondary/20 text-primary">
                 <HiMapPin className="h-6 w-6" aria-hidden />
               </span>
               <h3 className="mt-4 text-sm font-semibold uppercase tracking-[0.12em] text-foreground">
@@ -34,8 +41,8 @@ export function ContactSection() {
               </a>
             </div>
 
-            <div className="flex flex-col items-center rounded-2xl border border-border bg-light-gray p-8 text-center shadow-sm">
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+            <div className="flex flex-col items-center rounded-2xl border border-primary/15 bg-white/80 p-8 text-center shadow-lg shadow-primary/8 ring-1 ring-white/70 backdrop-blur-sm">
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/15 to-secondary/20 text-primary">
                 <HiPhone className="h-6 w-6" aria-hidden />
               </span>
               <h3 className="mt-4 text-sm font-semibold uppercase tracking-[0.12em] text-foreground">
@@ -57,8 +64,8 @@ export function ContactSection() {
               </div>
             </div>
 
-            <div className="flex flex-col items-center rounded-2xl border border-border bg-light-gray p-8 text-center shadow-sm">
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+            <div className="flex flex-col items-center rounded-2xl border border-primary/15 bg-white/80 p-8 text-center shadow-lg shadow-primary/8 ring-1 ring-white/70 backdrop-blur-sm">
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/15 to-secondary/20 text-primary">
                 <HiEnvelope className="h-6 w-6" aria-hidden />
               </span>
               <h3 className="mt-4 text-sm font-semibold uppercase tracking-[0.12em] text-foreground">

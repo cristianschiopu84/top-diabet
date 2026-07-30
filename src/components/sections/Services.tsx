@@ -21,8 +21,19 @@ const icons: Record<(typeof services)[number]["icon"], IconType> = {
 
 export function Services() {
   return (
-    <section id="servicii" className="bg-white py-20 sm:py-24">
-      <Container>
+    <section
+      id="servicii"
+      className="relative overflow-hidden bg-gradient-to-b from-white via-light-gray/55 to-white py-20 sm:py-24"
+    >
+      <div
+        className="pointer-events-none absolute -left-20 top-20 h-56 w-56 rounded-full bg-primary/15 blur-3xl"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute -right-20 bottom-12 h-56 w-56 rounded-full bg-secondary/15 blur-3xl"
+        aria-hidden
+      />
+      <Container className="relative">
         <FadeIn>
           <SectionHeading
             eyebrow="Servicii"
@@ -36,8 +47,8 @@ export function Services() {
             const Icon = icons[service.icon];
             return (
               <FadeIn key={service.id} delay={index * 0.05}>
-                <article className="group h-full rounded-3xl border border-border bg-white p-7 shadow-sm shadow-slate-900/[0.03] transition-all duration-300 hover:-translate-y-1 hover:border-primary/20 hover:shadow-lg hover:shadow-primary/10">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-white">
+                <article className="group h-full rounded-3xl border border-primary/15 bg-white/80 p-7 shadow-lg shadow-primary/8 ring-1 ring-white/70 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-secondary/30 hover:shadow-xl hover:shadow-primary/15">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/15 to-secondary/20 text-primary transition-colors duration-300 group-hover:from-primary group-hover:to-secondary group-hover:text-white">
                     <Icon className="h-5 w-5" aria-hidden />
                   </div>
                   <h3 className="mt-5 text-lg font-semibold tracking-tight text-foreground">

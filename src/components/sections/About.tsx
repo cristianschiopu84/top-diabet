@@ -6,11 +6,18 @@ import { stats } from "@/lib/data";
 
 export function About() {
   return (
-    <section id="despre" className="bg-light-gray py-20 sm:py-24">
-      <Container>
+    <section
+      id="despre"
+      className="relative overflow-hidden bg-gradient-to-b from-light-gray/70 via-white to-light-gray/60 py-20 sm:py-24"
+    >
+      <div
+        className="pointer-events-none absolute right-0 top-16 h-64 w-64 rounded-full bg-accent/15 blur-3xl"
+        aria-hidden
+      />
+      <Container className="relative">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <FadeIn direction="right">
-            <div className="relative overflow-hidden rounded-[1.75rem] bg-white shadow-lg shadow-slate-900/8 ring-1 ring-border">
+            <div className="relative overflow-hidden rounded-[1.75rem] bg-white/80 shadow-xl shadow-primary/10 ring-1 ring-primary/20 backdrop-blur-sm">
               <Image
                 src="/images/despre-birou.jpg"
                 alt="Interior modern al clinicii Dr. Diana Drăgoi"
@@ -41,7 +48,7 @@ export function About() {
               cele mai bune clinici private din România.
             </p>
 
-            <div className="mt-10 grid grid-cols-3 gap-4 border-t border-border pt-8">
+            <div className="mt-10 grid grid-cols-3 gap-4 border-t border-primary/20 pt-8">
               {stats.map((stat) => (
                 <AnimatedCounter
                   key={stat.label}
@@ -55,7 +62,7 @@ export function About() {
         </div>
 
         <FadeIn className="mt-14">
-          <div className="rounded-[1.75rem] bg-white p-8 shadow-sm ring-1 ring-border sm:p-10">
+          <div className="rounded-[1.75rem] border border-primary/15 bg-white/80 p-8 shadow-lg shadow-primary/8 ring-1 ring-white/70 backdrop-blur-sm sm:p-10">
             <h3 className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
               Calitate și siguranță, la cele mai înalte standarde
             </h3>
