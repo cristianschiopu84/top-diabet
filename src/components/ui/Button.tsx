@@ -13,11 +13,11 @@ type ButtonProps = {
 
 const variants = {
   primary:
-    "bg-primary text-white shadow-sm shadow-primary/20 hover:bg-[#0c667e] hover:shadow-md hover:shadow-primary/25",
+    "bg-gradient-to-r from-primary to-[#0f8aa3] text-white shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/35 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]",
   secondary:
-    "bg-white text-primary ring-1 ring-primary/20 hover:bg-light-gray hover:ring-primary/35",
+    "bg-white text-primary ring-1 ring-primary/20 hover:bg-light-gray hover:ring-primary/35 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]",
   white:
-    "bg-white text-primary shadow-sm hover:bg-light-gray",
+    "bg-white text-primary shadow-md shadow-slate-900/10 hover:bg-light-gray hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]",
   ghost:
     "bg-transparent text-foreground ring-1 ring-border hover:bg-light-gray",
 };

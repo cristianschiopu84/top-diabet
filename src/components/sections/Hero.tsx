@@ -2,10 +2,18 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
+import { FaStar } from "react-icons/fa";
+import { HiOutlineClock, HiOutlineCheckCircle, HiOutlinePhone } from "react-icons/hi2";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { fadeLeft, fadeUp, staggerContainer } from "@/lib/animations";
 import { SITE } from "@/lib/constants";
+
+const highlights = [
+  "Peste 15 ani de experiență",
+  "Echipă de medici specialiști",
+  "Monitorizare glicemică modernă",
+];
 
 export function Hero() {
   const reduceMotion = useReducedMotion();
@@ -15,6 +23,7 @@ export function Hero() {
       id="acasa"
       className="relative overflow-hidden bg-gradient-to-b from-light-gray via-white to-white"
     >
+      <div className="bg-dot-grid pointer-events-none absolute inset-0 opacity-60 [mask-image:radial-gradient(ellipse_70%_60%_at_50%_35%,black,transparent)]" aria-hidden />
       <div
         className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-secondary/10 blur-3xl"
         aria-hidden
@@ -36,7 +45,7 @@ export function Hero() {
         >
           <motion.p
             variants={fadeUp}
-            className="mb-4 text-sm font-semibold uppercase tracking-[0.14em] text-secondary"
+            className="mb-4 inline-flex items-center gap-2 rounded-full bg-secondary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.14em] text-secondary ring-1 ring-secondary/20"
           >
             Dr. Mihaela Vladu · Top Diabet · Craiova
           </motion.p>
@@ -44,7 +53,11 @@ export function Hero() {
             variants={fadeUp}
             className="max-w-xl text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-[3.25rem] lg:leading-[1.1]"
           >
-            Grijă personalizată pentru controlul diabetului.
+            Grijă personalizată pentru{" "}
+            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+              controlul diabetului
+            </span>
+            .
           </motion.h1>
           <motion.p
             variants={fadeUp}
@@ -53,12 +66,34 @@ export function Hero() {
             Consultații de diabet, nutriție și boli metabolice într-un mediu modern
             și profesionist.
           </motion.p>
-          <motion.div variants={fadeUp} className="mt-8 flex flex-wrap gap-3">
+
+          <motion.ul variants={fadeUp} className="mt-6 space-y-2.5">
+            {highlights.map((item) => (
+              <li key={item} className="flex items-center gap-2.5 text-sm text-foreground sm:text-base">
+                <HiOutlineCheckCircle className="h-5 w-5 shrink-0 text-accent" aria-hidden />
+                {item}
+              </li>
+            ))}
+          </motion.ul>
+
+          <motion.div variants={fadeUp} className="mt-8 flex flex-wrap items-center gap-3">
             <Button href={SITE.phoneHref}>Programează-te</Button>
             <Button href="#servicii" variant="secondary">
               Vezi serviciile
             </Button>
           </motion.div>
+
+          <motion.a
+            variants={fadeUp}
+            href={SITE.phoneHref}
+            className="mt-6 inline-flex items-center gap-2.5 text-sm font-medium text-muted transition-colors hover:text-primary"
+          >
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary">
+              <HiOutlinePhone className="h-4 w-4" aria-hidden />
+            </span>
+            Sună acum:{" "}
+            <span className="font-semibold text-foreground">{SITE.phone}</span>
+          </motion.a>
         </motion.div>
 
         <motion.div
@@ -78,6 +113,28 @@ export function Hero() {
               className="h-[420px] w-full object-cover object-center sm:h-[520px]"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
+          </div>
+
+          <div className="animate-float-slow absolute -left-4 top-8 hidden rounded-2xl border border-white/60 bg-white/85 px-5 py-4 shadow-lg shadow-slate-900/10 backdrop-blur-md sm:block lg:-left-8">
+            <div className="flex items-center gap-1 text-accent" aria-label="5 din 5 stele">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <FaStar key={i} className="h-3.5 w-3.5" aria-hidden />
+              ))}
+            </div>
+            <p className="mt-1.5 text-sm font-semibold text-foreground">
+              98% pacienți mulțumiți
+            </p>
+            <p className="text-xs text-muted">peste 5000 de pacienți tratați</p>
+          </div>
+
+          <div className="animate-float-slower absolute -right-3 bottom-10 hidden items-center gap-3 rounded-2xl border border-white/60 bg-white/85 px-5 py-4 shadow-lg shadow-slate-900/10 backdrop-blur-md sm:flex lg:-right-6">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <HiOutlineClock className="h-5 w-5" aria-hidden />
+            </span>
+            <div>
+              <p className="text-sm font-semibold text-foreground">Program flexibil</p>
+              <p className="text-xs text-muted">L–V 08:00–20:00 · S 09:00–14:00</p>
+            </div>
           </div>
         </motion.div>
       </Container>

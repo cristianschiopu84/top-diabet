@@ -16,7 +16,7 @@ export function SectionHeading({
   return (
     <div className={`max-w-2xl ${alignment}`}>
       {eyebrow ? (
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.14em] text-secondary">
+        <p className="mb-3 inline-flex items-center rounded-full bg-secondary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.14em] text-secondary ring-1 ring-secondary/20">
           {eyebrow}
         </p>
       ) : null}
