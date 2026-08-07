@@ -12,6 +12,12 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/:path*",
+        has: [{ type: "header", key: "host", value: "topdiabet.ro" }],
+        destination: "https://www.topdiabet.ro/:path*",
+        permanent: true,
+      },
+      {
         source: "/politica-confidentialitate",
         destination: "/privacy-policy",
         permanent: true,
