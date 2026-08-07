@@ -77,21 +77,14 @@ export default function CookiesPolicyPage() {
         consimțământul dumneavoastră pentru categoria relevantă.
       </p>
 
-      <h2>6. Conținut furnizat de terți</h2>
-      <p>
-        Site-ul poate încărca conținut furnizat de terți (de exemplu Google
-        Maps), care poate seta cookie-uri sau colecta date tehnice conform
-        politicilor furnizorului respectiv.
-      </p>
-
-      <h2>7. Cum puteți șterge cookie-urile</h2>
+      <h2>6. Cum puteți șterge cookie-urile</h2>
       <p>
         Puteți șterge cookie-urile din setările browserului (Chrome, Firefox,
         Edge, Safari etc.). Ștergerea poate afecta funcționalitatea unor
         elemente ale site-ului.
       </p>
 
-      <h2>8. Cum modificați preferințele</h2>
+      <h2>7. Cum modificați preferințele</h2>
       <p>
         Folosiți oricând linkul{" "}
         <strong className="text-foreground">„Setări cookies”</strong> din
@@ -103,13 +96,34 @@ export default function CookiesPolicyPage() {
         .
       </p>
 
-      <h2>9. Contact</h2>
+      <h2>8. Contact</h2>
       <p>
         Operator: {LEGAL_ENTITY.companyName} (CUI {LEGAL_ENTITY.cui})
         <br />
         Întrebări:{" "}
         <a href={`mailto:${LEGAL_ENTITY.email}`} className="font-medium text-primary">
           {LEGAL_ENTITY.email}
+        </a>
+        .
+      </p>
+
+      <h2>Conținut furnizat de terți</h2>
+      <p>
+        Site-ul poate încărca conținut furnizat de terți (de exemplu{" "}
+        <strong className="text-foreground">Google Maps</strong>), care poate
+        seta cookie-uri sau colecta date tehnice conform politicilor
+        furnizorului respectiv.
+      </p>
+      <p>
+        Pentru informații suplimentare privind modul în care Google prelucrează
+        datele, consultați:{" "}
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-primary"
+        >
+          https://policies.google.com/privacy
         </a>
         .
       </p>
